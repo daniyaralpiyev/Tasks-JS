@@ -4,12 +4,16 @@ let inventory = [
     {id: 3, name: 'Cherry', price: 0.90, quantity: 5}
 ]
 
-// Answer 1
+
+
+// Answer 1 ****************************************
 Object.values(inventory).forEach((value) => {
     console.log(value.name)
 })
 
-// Answer 2
+
+
+// Answer 2 ****************************************
 function updateInventory(productId, amount) {
     const item = inventory.find(item => item.id === productId);
 
@@ -23,11 +27,14 @@ function updateInventory(productId, amount) {
 
     return `${item.name} ${item.quantity}`;
 }
+
 console.log(updateInventory(1, 10))
 console.log(updateInventory(2, 10))
 console.log(updateInventory(3, 10))
 
-// Answer 3 variant 1
+
+
+// Answer 3 variant 1 ****************************************
 const findLowStock1 = (threshold) => {
     return Object.entries(inventory)
         .filter(([_, item]) => item.quantity < threshold)
@@ -43,7 +50,9 @@ const findLowStock2 = (threshold) => {
 }
 console.log(findLowStock2(100));
 
-// Answer 4
+
+
+// Answer 4 ****************************************
 const totalInventoryValue = () => {
     let total = 0;
     inventory.forEach(item => total += item.price * item.quantity);
