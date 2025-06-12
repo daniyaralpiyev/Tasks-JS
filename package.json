@@ -18,6 +18,7 @@
   "homepage": "https://github.com/daniyaralpiyev/Tasks-JS#readme",
   "description": "",
   "dependencies": {
-    "axios": "^1.9.0"
+    "axios": "^1.9.0",
+    "luxon": "^3.6.1"
   }
 }
