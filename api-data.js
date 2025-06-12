@@ -31,5 +31,6 @@ const getDataAxion = async () => {
 }
 getDataAxion()
 
+// variant 2 axion
 axios.get(url)
     .then(response => console.log(response.data));
